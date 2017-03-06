@@ -1,0 +1,109 @@
+html,
+body {
+    margin: 0;
+}
+
+/*  Color pink:         F08F6C
+    Color red:          D36237
+    Color chartruse:    E2DD67
+    Color grun:         A8BA4E
+    Color :             
+*/
+
+#stalk, #meat, #purs, #curt, #usaFood, #usaLand, .range-min, .range-max {
+    height:0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #AAA;
+
+}
+
+h1 {
+    font-weight:300;
+    margin-left: auto;
+    margin-right: auto;
+    left:50%;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    left:50%;
+    font-size: 12px;
+    width: 60%;
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas {
+    width: 80%;
+    height: 250px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-top: 5%;
+    margin-right: auto;
+    display: block;
+}
+
+table {
+    width:50%;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    text-align: center; 
+    width: 25%;
+    font-size: 12px;
+    color: white;
+    border-radius: 25px;
+}
+
+.filler {
+    width: 12.5%;
+}
+
+/*SLIDER*/
+.range-bar .butt {
+  background-color: #AAA;
+}
+
+.butt .range-quantity {
+  background-color: #AAA;
+}
+
+
+.sliderWrapper {
+    display: inline-block; *display: inline;
+	width: 50%;
+	padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    display: block;
+}
+
+#container {width:100%; font-size:0;}
+
+#left, #middle, #right {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align:center;
+    font-size: 18px;
+    font-weight: 300;
+   }
+
+#left {width: 25%;text-align: right;}
+#middle {width: 50%;}
+#right {width: 25%;}
+
+

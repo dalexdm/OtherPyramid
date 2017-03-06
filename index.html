@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The Other Pyramid</title>
+    <!--General Stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Slider Resources-->
+    <link rel="stylesheet" href="css/powerange.css" />
+    <script src="js/powerange.js"></script>
+
+    <!--Paper Resources-->
+    <script type="text/javascript" src="js/paper-full.js"></script>
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+    <!--d3-->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    
+</head>
+
+<body>
+    <h1>THE OTHER FOOD PYRAMID</h1>
+    <p>In order to grow a pound, any animal, including you, must eat many pounds of food. As a result, every calorie of meat you eat requires on average 8 calories of feed or grazing to grow. As Earth's population grows, this becomes unsustainable. Use the slider below to adjust the amount of meat in your diet and observe the micro and macro scale effects.</p>
+
+    <table>
+        <tr>
+            <td style = "background-color: #A8BA4E;"> PLANT PRODUCE </td> 
+            <td class="filler"></td>
+            <td style = "background-color: #D36237;"> LIVESTOCK </td>
+            <td class="filler"></td>
+            <td style = "background-color: #F08F6C;"> ANIMAL FEED </td> 
+        </tr>
+    </table>
+        <!--Canvas-->
+        <canvas id="canvas"></canvas>
+        <!--powerRange Input-->
+        <div id="container">
+            <div id="left">50% MEAT&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div class="sliderWrapper" id="middle">
+                <input type="text" class='boob' style="display:none;">
+            </div>
+            <div id="right">&nbsp;&nbsp;&nbsp;&nbsp;0% MEAT</div>
+        </div>
+
+        <!--Graph!-->
+        <canvas id="canvas2"></canvas>
+    </br></br>
+    <p style="text-align:center;">Source: USDA Land Usage (2007) and Cornell University (2003)
+        </br>https://www.ers.usda.gov/data-products/major-land-uses/
+        </br>http://ajcn.nutrition.org/content/78/3/660S.full</p>
+
+        <!--invisible images-->
+        <img id="stalk" src="img/stalk.png">
+        <img id="meat" src="img/meat.png">
+        <img id="curt" src="img/carrot.png">
+        <img id="purs" src="img/person.png">
+        <img id="usaLand" src="img/usaLand">
+        <img id="usaFood" src="img/usaFood">
+
+        <!--paperScript-->
+        <script type="text/javascript">
+            window.graphResize = function (percent) {};
+        </script>
+        <script type="text/paperscript" src="js/pyramid.js" canvas="canvas"></script>
+        <script type="text/paperscript" src="js/graph.js" canvas="canvas2"></script>
+</body>
+</html>
